@@ -14,4 +14,4 @@ for i, row in enumerate(data):
 
 # Saving new file game_new.csv
 with open("game_new.csv", "w", encoding="utf8") as file:
-    file.write("\n".join(map("$".join, new_data)))
+    file.write("GameName$characters$nameError$date\n" + "\n".join(map("$".join, new_data)))
