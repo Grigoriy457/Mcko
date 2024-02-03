@@ -19,5 +19,5 @@ data = [row + [str(get_bugs_count_by_game_name(row[0], data))] for row in data]
 
 
 # Saving new file game_new.csv
-with open("game_new.csv", "w", encoding="utf8") as file:
+with open("game_counter.csv", "w", encoding="utf8") as file:
     file.write("GameName,characters,nameError,date,counter\n" + "\n".join(map(",".join, data)))
